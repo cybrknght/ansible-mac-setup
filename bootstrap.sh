@@ -1,23 +1,66 @@
 #!/bin/bash
 
-echo "Please install Xcode before continuing. Press any key when ready to proceed"
-read  -n 1
+#Install XCode Comand Line Tools
+xcode-select -p 1>/dev/null;check_xcode=$?
+if [ "$check_xcode" -eq 2 ]; then
+  echo "Installing xcode. Follow the wizard"
+  xcode-select --install
+else
+  echo "Xcode installed skipping"
+fi
+
+#Install homebrew
+if which brew 1>/dev/null; then
+  echo "Brew Installed, skipping"
+else
+  echo "Installing homebrew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+#Install python3
+if brew ls --versions python3 > /dev/null; then
+  echo "Python3 installed, skipping"
+else
+  echo "Installing python3"
+  brew install python3
+fi
+
+#Update Pip3 and install ansible
+check_pip=$(pip3 list -o | grep -c pip)
+if [ $check_pip -eq 0 ]; then
+  echo "Pip Up to date, skipping"
+else
+  echo "Update Pip3"
+  pip3 install --upgrade pip
+fi
+
+if pip3 show ansible 1>/dev/null; then
+  echo "Ansible 2.9 installed, skipping"
+else
+  echo "Installing Ansible 2.9"
+  pip3 install ansible==2.9
+fi
+
+
+# Old
+#echo "Please install Xcode before continuing. Press any key when ready to proceed"
+#read  -n 1
 
 # Install homebrew
-echo "Installing homebrew"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#echo "Installing homebrew"
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install python3
-echo "Installing python3"
-brew install python3
+#echo "Installing python3"
+#brew install python3
 
 # Install ansible
-brew install ansible@2.9
-brew link --overwrite ansible@2.9
+#brew install ansible@2.9
+#brew link --overwrite ansible@2.9
 
 # Run ansible playbook
-ansible-playbook homedir.yml --connection=local
+#ansible-playbook homedir.yml --connection=local
 
 # Pull latest community module (temporary homebrew cask fixes)
-ansible-galaxy collection  install community.general --force
-ansible-galaxy install gantsign.visual-studio-code-extensions
+#ansible-galaxy collection  install community.general --force
+#ansible-galaxy install gantsign.visual-studio-code-extensions
