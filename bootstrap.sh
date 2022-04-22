@@ -38,9 +38,19 @@ if pip3 show ansible 1>/dev/null; then
   echo "Ansible 2.9 installed, skipping"
 else
   echo "Installing Ansible 2.9"
-  pip3 install ansible==2.9
+  pip3 install 'ansible>2.9,<2.10'
 fi
 
+# Pull latest community module (temporary homebrew cask fixes)
+echo "Ansible Collections Install"
+ansible-galaxy collection install -r requirements.yml
+
+echo "Ansible Role Install"
+ansible-galaxy role install -r requirements.yml
+
+# Run ansible playbook
+echo "Playbook Run"
+ansible-playbook homedir.yml --connection=local
 
 # Old
 #echo "Please install Xcode before continuing. Press any key when ready to proceed"

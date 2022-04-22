@@ -1,6 +1,6 @@
 ---
 roles:
+  - name: gantsign.visual-studio-code-extensions
 
 collections:
   - name: community.general
-  - name: gantsign.visual-studio-code-extensions
