@@ -1,13 +1,16 @@
 ---
 - name: check if oh-my-zsh is installed
-  stat: 
+  stat:
     path: ~/.oh-my-zsh/oh-my-zsh.sh
   register: installed
 
 - name: install oh-my-zsh
-  block:
-    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+#  block:
+#    - command: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  git:
+    repo: "https://github.com/robbyrussell/oh-my-zsh.git"
+    dest: "{{ ansible_env.HOME + '/.oh-my-zsh' }}"
+    update: yes
   when: not installed.stat.exists
 
 - name: install powerline10k
@@ -44,4 +47,3 @@
   copy:
     src: p10k.zsh
     dest: ~/.p10k.zsh
-      

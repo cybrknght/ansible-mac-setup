@@ -1,32 +1,40 @@
 ---
+# https://formulae.brew.sh/cask/
 - name: Installing apps through homebrew (casks)
   community.general.homebrew_cask:
     name:
-      - 1password
+#      - 1password
       - amazon-chime
+      - atom
       - aws-vault
-      - docker
-      - fantastical
+#      - bitwarden #in app store
+#      - docker
+#      - fantastical
       - firefox
       - google-chrome
+      - google-drive
       - iterm2
-      - kaleidoscope
-      - keybase
+#      - kaleidoscope
+#      - keybase
+      - keepassxc
+      - menumeters
       - microsoft-auto-update
-      - microsoft-edge
-      - microsoft-office
+#      - microsoft-edge
+#      - microsoft-office
       - microsoft-teams
       - postman
       - powershell
-      - signal
-      - slack
-      - tower
-      - transmission
-      - transmit
+      - rancher
+#      - signal
+#      - slack
+#      - tower
+#      - transmission
+#      - transmit
       - visual-studio-code
-      - vlc
-      - zoom
+#      - vlc
+#      - zoom
     state: present
+    accept_external_apps: yes
 
 - name: Installing apps through homebrew
   community.general.homebrew:
@@ -35,10 +43,10 @@
       - awscli
       - azure-cli
       - cloudflare/cloudflare/cloudflared
-      - coreutils
+#      - coreutils
       - gh
       - gnu-tar
-      - gpg
+#      - gpg
       - hashicorp/tap/terraform-ls
       - helm
       - inframap
@@ -46,11 +54,12 @@
       - kubectl
       - mas
       - md5sha1sum
-      - nodejs
-      - speedtest-cli
-      - steampipe
+#      - nodejs
+#      - speedtest-cli
+      - superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt
+      - turbot/tap/steampipe
       - terraform
-      - timeout
+#      - timeout
       - watch
       - wget
       - yq
@@ -60,13 +69,19 @@
 - name: Install apps from the App Store
   community.general.mas:
     id:
-      - 1176895641 # spark
-      - 419330170  # moom
-      - 1419729466 # fast vpn
-      - 409907375  # Remote Desktop
+      - 1352778147 # bitwarden
+      - 1295203466 # Microsoft Remote Desktop
+      - 823766827  # OneDrive
+      - 1230249825 # VMware Remote Console
+      - 803453959  # Slack for Desktop
+      - 865500966  # feedly. Read more, know more.
+#      - 1176895641 # spark
+#      - 419330170  # moom
+#      - 1419729466 # fast vpn
+#      - 409907375  # Apple Remote Desktop
       - 1274495053 # Microsoft To Do
-      - 1475387142 # Tailscale
-      - 472226235  # LanScan
+#      - 1475387142 # Tailscale
+#      - 472226235  # LanScan
       - 409183694  # Keynote
       - 409201541  # Pages
       - 409203825  # Numbers
