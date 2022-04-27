@@ -27,5 +27,5 @@
 
 - name: configure yamllint
   copy:
-    src: yamllint
+    src: ansible/yamllint
     dest: ~/.config/yamllint/config
