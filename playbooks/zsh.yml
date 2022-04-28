@@ -18,6 +18,7 @@
     name: romkatv/powerlevel10k/powerlevel10k
 
 - name: install meslo fonts
+  become: true
   get_url:
     url: "https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/{{ item }}"
     dest: "/Library/Fonts/{{ item }}"

@@ -11,8 +11,8 @@
       tags: ["zsh", "config"]
     - include: playbooks/vscode.yml
       tags: ["vscode", "config"]
-#    - include: playbooks/iterm2.yml
-#      tags: ["iterm2", "config"]
+    - include: playbooks/iterm2.yml
+      tags: ["iterm2", "config"]
 #    - include: playbooks/aws.yml
 #      tags: ["aws", "config"]
   roles:
