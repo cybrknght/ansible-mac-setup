@@ -27,6 +27,11 @@ git clone git@github.com:cybrknght/ansible-mac-setup.git
 
 NOTE: Might need to configure github username and email
 
+## Variables:
+For vscode extensions only:
+* visual_studio_code_extensions - vs code extensions to install, list, default [] (empty)
+* visual_studio_code_extensions_absent - vs code extensions to uninstall, list, default [] (empty)
+
 ## How to Run
 To run the entire repo:
 ```bash
