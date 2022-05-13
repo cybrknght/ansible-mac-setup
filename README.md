@@ -11,14 +11,19 @@ chmod 0700 .ssh
 cp ~/Google\ Drive/My\ Drive/Linux/SSH/id_rsa* ~/.ssh/
 cp ~/Google\ Drive/My\ Drive/Linux/SSH/config ~/.ssh/
 ```
-2. Prepare the github repo location mkdir playbooks
+2. Prepare git
+```bash
+git config --global user.name "cybrknght"
+git config --global user.email "brandon-tharp@tamu.edu"
+```
+3. Prepare the github repo location mkdir playbooks
 
 ```bash
 mkdir ~/playbooks
 git clone git@github.com:cybrknght/ansible-mac-setup.git
 ```
-3. Be sure to have logged into the App Store on the Mac
-4. Might have to open VS Code once installed to set the settings and install extensions
+4. Be sure to have logged into the App Store on the Mac
+5. Might have to open VS Code once installed to set the settings and install extensions
 
 NOTE: Might need to configure github username and email
 
@@ -40,6 +45,7 @@ To run individual tags using ansible:
 ```bash
 ansible-playbook homedir.yml --connection-local --tags <tag>
 ```
+Note: to fix a problem with iterm2 fonts, you need to include `--ask-become-pass`
 
 ## Settings
 * Oh-my-zsh/Powerlevel10k

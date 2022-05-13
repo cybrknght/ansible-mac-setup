@@ -52,7 +52,7 @@ ansible-galaxy role install -r requirements.yml
 
 # Run ansible playbook
 echo "Playbook Run"
-ansible-playbook homedir.yml --connection=local
+ansible-playbook homedir.yml --connection=local --ask-become-pass
 
 # Old
 #echo "Please install Xcode before continuing. Press any key when ready to proceed"
