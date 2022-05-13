@@ -13,8 +13,8 @@
       tags: ["vscode", "config"]
     - include: playbooks/iterm2.yml
       tags: ["iterm2", "config"]
-#    - include: playbooks/aws.yml
-#      tags: ["aws", "config"]
+##    - include: playbooks/aws.yml
+##      tags: ["aws", "config"]
 #  roles:
 #    - role: gantsign.visual-studio-code-extensions
 #      tags: ["vscode", "config"]
@@ -24,33 +24,33 @@
 #          visual_studio_code_extensions:
 #            - 4ops.packer #packer
 #            - bierner.markdown-preview-github-styles # use github markdown sytling
-#            - brijeshb42.vscode-excalidraw # doesnt exist
+##            - brijeshb42.vscode-excalidraw # doesnt exist
 #            - DavidAnson.vscode-markdownlint # markdown linter
 #            - GitHub.vscode-pull-request-github
-#            - golang.go
+##            - golang.go
 #            - googlecloudtools.cloudcode # Google Cloud's IDE extension
 #            - hashicorp.terraform # Syntax highlighting and autocompletion for Terraform
-#            - hediet.vscode-drawio
-#            - HookyQR.beautify
-#            - keesschollaart.vscode-home-assistant
+##            - hediet.vscode-drawio
+##            - HookyQR.beautify
+##            - keesschollaart.vscode-home-assistant
 #            - ms-azuretools.vscode-docker # Docker
 #            - ms-kubernetes-tools.vscode-kubernetes-tools # K8s
 #            - ms-python.python # python
 #            - ms-python.vscode-pylance
 #            - ms-toolsai.jupyter
-#            - ms-toolsai.jupyter-keymap
+#             - ms-toolsai.jupyter-keymap
 #            - ms-toolsai.jupyter-renderers
 #            - ms-vscode-remote.remote-containers # Remote Containers
 #            - ms-vscode.azure-account # Sign-in Mgmt for VS Code
 #            - ms-vscode.powershell # Powershell
 #            - redhat.ansible # ansible
 #            - redhat.vscode-yaml
-#            - ronnidc.nunjucks
+##            - ronnidc.nunjucks
 #            - samuelcolvin.jinjahtml
 #            - shardulm94.trailing-spaces
 #            - streetsidesoftware.code-spell-checker # Spell checker for code
-#            - uctakeoff.vscode-counter
+##            - uctakeoff.vscode-counter
 #            - vmware-pscoe.vrealize-developer-tools
 #            - wholroyd.HCL # HCL Language support
-#            - wholroyd.jinja # Jinga support
+##            - wholroyd.jinja # Jinga support
 #          visual_studio_code_extensions_absent: []

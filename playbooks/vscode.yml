@@ -3,3 +3,16 @@
   copy:
     src: vscode/settings.json
     dest: $HOME/Library/Application Support/Code/User/settings.json
+
+- name: include vscode vars
+  include_vars: vars/vscode.yml
+
+- name: install vscode extensions
+  include_tasks: vscode-extensions-inst.yml
+  loop: "{{ visual_studio_code_extensions }}"
+  when: visual_studio_code_extensions|length > 0
+
+- name: uninstall vscode extensions
+  include_tasks: vscode-extensions-uninst.yml
+  loop: "{{ visual_studio_code_extensions_absent }}"
+  when: visual_studio_code_extensions_absent|length > 0

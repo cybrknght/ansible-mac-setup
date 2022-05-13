@@ -2,7 +2,7 @@
 
 /*    "gopls": {
       "experimentalWorkspaceModule": true
-*/    },
+    }, */
     "terminal.external.osxExec": "iTerm.app",
 
     "terminal.integrated.profiles.osx": {
@@ -21,7 +21,7 @@
       "tree.tableColumnsBorder": "#c0c0c0",
       "editorIndentGuide.activeBackground": "#00b7ff",
       // "editorIndentGuide.background": "#ff00ff"
-*/    },
+    }, */
     "explorer.confirmDragAndDrop": false,
     "editor.foldingStrategy": "indentation",
     "explorer.confirmDelete": false,

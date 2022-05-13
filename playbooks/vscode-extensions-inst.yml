@@ -1,0 +1,15 @@
+---
+- name: Check if extension is installed
+  shell: code --list-extensions | grep {{ item }}
+  register: vsextension_installed
+  when: visual_studio_code_extensions|length > 0
+  ignore_errors: true
+
+- debug:
+    var: vsextension_installed.stdout
+
+- name: Install missing extension {{ item }}
+  command: code --install-extension {{ item }}
+  when:
+    - visual_studio_code_extensions|length > 0
+    - item != vsextension_installed.stdout
