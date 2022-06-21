@@ -48,9 +48,9 @@ The script will install the pre-requisites to run ansible.  After the prerequisi
 
 To run individual tags using ansible:
 ```bash
-ansible-playbook homedir.yml --connection-local --tags <tag>
+ansible-playbook homedir.yml --connection=local -K --tags <tag>
 ```
-Note: to fix a problem with iterm2 fonts, you need to include `--ask-become-pass`
+Note: to fix a problem with iterm2 fonts, you need to include `--ask-become-pass` or `-K` for short
 
 ## Settings
 * Oh-my-zsh/Powerlevel10k

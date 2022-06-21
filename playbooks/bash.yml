@@ -1,0 +1,8 @@
+---
+- name: "Add updated bash to shells file"
+  become: yes
+  tags: bash, config
+  lineinfile:
+    path: /etc/shells
+    line: "/opt/homebrew/bin/bash"
+    state: present
