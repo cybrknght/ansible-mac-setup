@@ -42,7 +42,6 @@
       - act
       - awscli
       - azure-cli
-      - bash
       - cloudflare/cloudflare/cloudflared
 #      - coreutils
       - gh
