@@ -7,8 +7,6 @@
       tags: ansible
     - include: playbooks/apps.yml
       tags: apps
-    - include: playbooks/bash.yml
-      tags: ["bash","config"]
     - include: playbooks/zsh.yml
       tags: ["zsh", "config"]
     - include: playbooks/vscode.yml
