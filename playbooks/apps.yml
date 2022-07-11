@@ -55,6 +55,7 @@
       - mas
       - md5sha1sum
 #      - nodejs
+      - packer
 #      - speedtest-cli
       - superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt
       - turbot/tap/steampipe
