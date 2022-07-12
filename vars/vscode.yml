@@ -29,7 +29,7 @@ visual_studio_code_extensions:
   - shardulm94.trailing-spaces
   - streetsidesoftware.code-spell-checker # Spell checker for code
 #  - uctakeoff.vscode-counter
-  - vmware-pscoe.vrealize-developer-tools
+#  - vmware-pscoe.vrealize-developer-tools
 #  - wholroyd.HCL # HCL Language support
 #  - wholroyd.jinja # Jinga support
 visual_studio_code_extensions_absent: []
