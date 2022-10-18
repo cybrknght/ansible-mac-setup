@@ -1,39 +1,68 @@
 {
-
-/*    "gopls": {
+  /*    "gopls": {
       "experimentalWorkspaceModule": true
     }, */
-    "terminal.external.osxExec": "iTerm.app",
-
-    "terminal.integrated.profiles.osx": {
-      "zsh": {
-        "path": "zsh",
-        "args": ["-l"],
-        "fontFamily": "MesloLGS NF"
-      }
-    },
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.scrollback": 100000,
-    "notebook.editorOptionsCustomizations": null,
-    "workbench.tree.indent": 20,
-/*    "workbench.colorCustomizations": {
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "zsh",
+      "args": [
+        "-l"
+      ],
+      "fontFamily": "MesloLGS NF"
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.scrollback": 100000,
+  "notebook.editorOptionsCustomizations": null,
+  "workbench.tree.indent": 20,
+  /*    "workbench.colorCustomizations": {
       "tree.indentGuidesStroke": "#ff388b",
       "tree.tableColumnsBorder": "#c0c0c0",
       "editorIndentGuide.activeBackground": "#00b7ff",
       // "editorIndentGuide.background": "#ff00ff"
     }, */
-    "explorer.confirmDragAndDrop": false,
-    "editor.foldingStrategy": "indentation",
-    "explorer.confirmDelete": false,
-    "cSpell.userWords": [
-      "Aggiebuy",
-      "CODEOWNER",
-      "creds",
-      "FAMIS",
-      "mockpipeline",
-      "unmanaged"
-    ],
-//    "go.toolsManagement.autoUpdate": true,
-    "window.zoomLevel": 1,
-    "test": true
-}
+  "explorer.confirmDragAndDrop": false,
+  "editor.foldingStrategy": "indentation",
+  "explorer.confirmDelete": false,
+  "cSpell.userWords": [
+    "Aggiebuy",
+    "AggieCloud",
+    "CODEOWNER",
+    "creds",
+    "FAMIS",
+    "mockpipeline",
+    "unmanaged"
+  ],
+  //    "go.toolsManagement.autoUpdate": true,
+  "window.zoomLevel": 1,
+  "test": true,
+  "workbench.startupEditor": "none",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "editor.tabSize": 2,
+  "redhat.telemetry.enabled": false,
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/brandon-tharp/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.helm-path.mac": "/Users/brandon-tharp/.vs-kubernetes/tools/helm/darwin-arm64/helm"
+  },
+  "window.commandCenter": true,
+  "excalidraw.theme": "dark",
+  "workbench.editorAssociations": {
+    "*.excalidraw": "editor.excalidraw"
+  },
+  "editor.formatOnSave": true,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.formatAll.terraform": true
+    }
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.formatAll.terraform": true
+    }
+  }
