@@ -5,7 +5,6 @@
     name:
 #      - 1password
       - amazon-chime
-      - atom
       - aws-vault
 #      - bitwarden #in app store
 #      - docker
