@@ -7,7 +7,7 @@
       - amazon-chime
       - aws-vault
 #      - bitwarden #in app store
-#      - docker
+      - docker
 #      - fantastical
       - firefox
       - google-chrome
@@ -24,7 +24,7 @@
       - obsidian
       - postman
       - powershell
-      - rancher
+#      - rancher
 #      - signal
 #      - slack
 #      - tower
