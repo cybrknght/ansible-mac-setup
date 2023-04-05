@@ -1,12 +1,13 @@
 ---
 visual_studio_code_extensions:
   - 4ops.packer #packer
-  - bierner.markdown-preview-github-styles # use github markdown sytling
-#  - brijeshb42.vscode-excalidraw # doesnt exist
+  - bierner.markdown-preview-github-styles # use github markdown styling
+#  - brijeshb42.vscode-excalidraw # doesn't exist
   - DavidAnson.vscode-markdownlint # markdown linter
-  - GitHub.vscode-pull-request-github
+#  - GitHub.vscode-pull-request-github #Github Pull Request
 #  - golang.go
   - googlecloudtools.cloudcode # Google Cloud's IDE extension
+  - github.vscode-github-actions # Github Actions
   - hashicorp.terraform # Syntax highlighting and autocompletion for Terraform
   - hashicorp.hcl # syntax highlighting for HCL files
 #  - hediet.vscode-drawio
@@ -19,15 +20,15 @@ visual_studio_code_extensions:
   - ms-toolsai.jupyter
   - ms-toolsai.jupyter-keymap
   - ms-toolsai.jupyter-renderers
-  - ms-vscode-remote.remote-containers # Remote Containers
+  - ms-vscode-remote.remote-containers # Remote Containers (Dev Containers)
   - ms-vscode.azure-account # Sign-in Mgmt for VS Code
   - ms-vscode.powershell # Powershell
   - pomdtr.excalidraw-editor #excalidraw
   - redhat.ansible # ansible
   - redhat.vscode-yaml
-#  - ronnidc.nunjucks
-  - samuelcolvin.jinjahtml
-  - shardulm94.trailing-spaces
+  - ronnidc.nunjucks
+  - samuelcolvin.jinjahtml #better jinja
+  - shardulm94.trailing-spaces # trailing spaces
   - streetsidesoftware.code-spell-checker # Spell checker for code
   - yzhang.markdown-all-in-one #markdown ToC
 #  - uctakeoff.vscode-counter

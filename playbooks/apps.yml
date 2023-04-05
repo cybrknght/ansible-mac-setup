@@ -12,9 +12,10 @@
       - firefox
       - google-chrome
       - google-drive
+      - inspec
       - iterm2
 #      - kaleidoscope
-#      - keybase
+      - keybase
       - keepassxc
       - menumeters
       - microsoft-auto-update
@@ -46,6 +47,8 @@
 #      - coreutils
       - gh
       - gnu-tar
+      - go
+      - granted
 #      - gpg
       - hashicorp/tap/terraform-ls
       - helm
@@ -62,6 +65,7 @@
       - turbot/tap/steampipe
       - terraform
 #      - timeout
+      - tree
       - watch
       - wget
       - yq
