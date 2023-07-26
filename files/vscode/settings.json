@@ -51,18 +51,18 @@
   "workbench.editorAssociations": {
     "*.excalidraw": "editor.excalidraw"
   },
-  "editor.formatOnSave": true,
-  "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform",
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-      "source.formatAll.terraform": true
-    }
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "[terraform-vars]": {
-    "editor.defaultFormatter": "hashicorp.terraform",
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-      "source.formatAll.terraform": true
-    }
-  }
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSaveMode": "modifications",
+  "githubPullRequests.pullBranch": "never",
+  "powershell.promptToUpdatePowerShell": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "terraform.experimentalFeatures.validateOnSave": true,
+  "githubPullRequests.fileListLayout": "tree",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "ansible.lightspeed.enabled": false
+}
