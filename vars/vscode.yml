@@ -6,24 +6,34 @@ visual_studio_code_extensions:
   - DavidAnson.vscode-markdownlint # markdown linter
 #  - GitHub.vscode-pull-request-github #Github Pull Request
 #  - golang.go
-  - googlecloudtools.cloudcode # Google Cloud's IDE extension
   - github.vscode-github-actions # Github Actions
-  - hashicorp.terraform # Syntax highlighting and autocompletion for Terraform
+  - googlecloudtools.cloudcode # Google Cloud's IDE extension
   - hashicorp.hcl # syntax highlighting for HCL files
+  - hashicorp.terraform # Syntax highlighting and autocompletion for Terraform
 #  - hediet.vscode-drawio
 #  - HookyQR.beautify
 #  - keesschollaart.vscode-home-assistant
   - ms-azuretools.vscode-docker # Docker
+  - ms-azuretools.vscode-azureappservice # Azure App Service
+  - ms-azuretools.vscode-azurecontainerapps # Azure Container Apps
+  - ms-azuretools.vscode-cosmosdb # Azure Apps CosmoDB
+  - ms-azuretools.azure-dev # Azure Dev CLI
+  - ms-azuretools.vscode-azurefunctions # Azure Functions
+  - ms-azuretools.vscode-azureresourcegroups # Azure Resources
+  - ms-azuretools.vscode-azurestaticwebapps # Azure Static Web Apps
+  - ms-azuretools.vscode-azurestorage # Azure Storage
+  - ms-azuretools.vscode-azurevirtualmachine # Azure Virtual Machines
   - ms-kubernetes-tools.vscode-kubernetes-tools # K8s
   - ms-python.python # python
   - ms-python.vscode-pylance
   - ms-toolsai.jupyter
   - ms-toolsai.jupyter-keymap
   - ms-toolsai.jupyter-renderers
+  - ms-vscode.vscode-node-azure-pack # Azure Tools (see list above)
   - ms-vscode-remote.remote-containers # Remote Containers (Dev Containers)
   - ms-vscode.azure-account # Sign-in Mgmt for VS Code
   - ms-vscode.powershell # Powershell
-  - pomdtr.excalidraw-editor #excalidraw
+  - pomdtr.excalidraw-editor # Excalidraw
   - redhat.ansible # ansible
   - redhat.vscode-yaml
   - ronnidc.nunjucks
