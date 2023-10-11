@@ -41,6 +41,8 @@
   community.general.homebrew:
     name:
       - act
+      - ansible
+      - ansible-lint
       - awscli
       - azure-cli
       - azure-functions-core-tools@4
@@ -50,20 +52,26 @@
       - gnu-tar
       - go
       - granted
+      - graphviz
 #      - gpg
       - hashicorp/tap/terraform-ls
       - helm
       - inframap
       - jq
-      - kubectl
-      - keybase
+      - kubernetes-cli
+#      - keybase
       - mas
       - md5sha1sum
+      - mdbook
+      - nmap
 #      - nodejs
       - packer
+      - pandoc
+      - powerlevel10k
 #      - speedtest-cli
       - superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt
       - turbot/tap/steampipe
+      - sslscan
       - terraform
 #      - timeout
       - tree
