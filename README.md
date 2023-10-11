@@ -77,3 +77,13 @@ Note: to fix a problem with iterm2 fonts, you need to include `--ask-become-pass
 ## Obsidian
 
 The application, obsidian is used for saving nodes in md format.  Each vault has it's own configuration and plugins installed.  You shouldn't need to add any additional plugins or change any settings.  I have the (1) excalidraw and (2) Advanced Tables plugin installed.
+
+## JAMF Installed Apps
+
+A list of apps installed and controlled by JAMF:
+
+* Github Desktop
+* Google Chrome
+* Microsoft Office
+* Microsoft Remote Desktop
+* Slack
