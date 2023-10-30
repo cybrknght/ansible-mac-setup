@@ -85,18 +85,19 @@
   community.general.mas:
     id:
       - 1352778147 # bitwarden
+      - 510153374 # Newsify (netnewswire)
 #      - 1295203466 # Microsoft Remote Desktop
 #      - 823766827  # OneDrive
       - 1230249825 # VMware Remote Console
 #      - 803453959  # Slack for Desktop
-      - 865500966  # feedly. Read more, know more.
+#      - 865500966  # feedly. Read more, know more.
       - 1452453066 # hidden bar (menu bar icon organizer)
 #      - 1176895641 # spark
 #      - 419330170  # moom
 #      - 1419729466 # fast vpn
 #      - 409907375  # Apple Remote Desktop
       - 1274495053 # Microsoft To Do
-      - 880001334 # Reeder
+#      - 880001334 # Reeder
 #      - 1475387142 # Tailscale
 #      - 472226235  # LanScan
 #      - 409183694  # Keynote
