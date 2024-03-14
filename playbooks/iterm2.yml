@@ -6,8 +6,14 @@
     type: string
     value: "$HOME/.config/iterm2"
     state: present
+  tags:
+    - iterm2
+    - config
 
 - name: install iterm2 preference file
   copy:
     src: iterm2/com.googlecode.iterm2.plist
     dest: $HOME/.config/iterm2/com.googlecode.iterm2.plist
+  tags:
+    - iterm2
+    - config

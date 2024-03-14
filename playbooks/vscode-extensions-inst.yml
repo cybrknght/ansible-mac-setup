@@ -4,12 +4,15 @@
   register: vsextension_installed
   when: visual_studio_code_extensions|length > 0
   ignore_errors: true
-
-- debug:
-    var: vsextension_installed.stdout
+  tags:
+    - vscode
+    - config
 
 - name: Install missing extension {{ item }}
   command: code --install-extension {{ item }}
   when:
     - visual_studio_code_extensions|length > 0
     - item != vsextension_installed.stdout
+  tags:
+    - vscode
+    - config

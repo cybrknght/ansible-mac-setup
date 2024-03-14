@@ -3,3 +3,6 @@
   copy:
     src: aws/config
     dest: $HOME/.aws/config
+  tags:
+    - aws
+    - config

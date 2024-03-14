@@ -4,9 +4,15 @@
   register: vsextension_installed
   when: visual_studio_code_extensions_absent|length > 0
   ignore_errors: true
+  tags:
+    - vscode
+    - config
 
 - name: Uninstall extension
   command: code --uninstall-extension {{ item }}
   when:
     - visual_studio_code_extensions_absent|length > 0
     - item == vsextension_installed.stdout
+  tags:
+    - vscode
+    - config
