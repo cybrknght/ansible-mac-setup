@@ -30,8 +30,10 @@
     "AggieCloud",
     "CODEOWNER",
     "creds",
+    "DMARC",
     "FAMIS",
     "mockpipeline",
+    "tamu",
     "unmanaged"
   ],
   //    "go.toolsManagement.autoUpdate": true,
@@ -64,5 +66,8 @@
   "terraform.experimentalFeatures.validateOnSave": true,
   "githubPullRequests.fileListLayout": "tree",
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "ansible.lightspeed.enabled": false
+  "ansible.lightspeed.enabled": false,
+  "ansible.executionEnvironment.volumeMounts": [],
+  "cloudcode.duetAI.enable": false,
+  "cloudcode.duetAI.inlineSuggestions.enableAuto": false
 }

@@ -1,12 +1,21 @@
 ---
-- name: Check if extension is installed
-  shell: code --list-extensions | grep {{ item }}
+- name: Check if extension {{ item }} is installed
+  ansible.builtin.shell: code --list-extensions | grep {{ item }}
   register: vsextension_installed
+  changed_when: vsextension_installed.rc == 0
   when: visual_studio_code_extensions_absent|length > 0
   ignore_errors: true
+  tags:
+    - vscode
+    - config
 
-- name: Uninstall extension
-  command: code --uninstall-extension {{ item }}
+- name: Uninstall extension {{ item }}
+  ansible.builtin.command: code --uninstall-extension {{ item }}
+  register: uninstall_result
+  changed_when: uninstall_result.rc == 0
   when:
     - visual_studio_code_extensions_absent|length > 0
     - item == vsextension_installed.stdout
+  tags:
+    - vscode
+    - config

@@ -1,31 +1,41 @@
 ---
 # Use the stdout_callback when running ad-hoc commands.
 # Use yaml output callpack plugin
-- name: ansible.cfg content
-  copy:
+- name: Set ansible.cfg content
+  ansible.builtin.copy:
     dest: ~/.ansible.cfg
+    mode: 0644
     content: |
       [defaults]
       stdout_callback = yaml
       bin_ansible_callbacks = True
+  tags:
+    - ansible
 
-- name: Install ansible pip modules
-  pip:
-    name:
-      - argcomplete
-      - yamllint==1.25.0
-      - ansible-lint==4.3.5
-      - docker
-      - docker-compose
-      - molecule==3.0.8
-    executable: pip3
+# - name: Install ansible pip modules
+#   pip:
+#     name:
+#       - argcomplete
+#       - yamllint==1.25.0
+#       - ansible-lint==4.3.5
+#       - docker
+#       - docker-compose
+#       - molecule==3.0.8
+#     executable: pip3
 
-- name: configure yamllint folder
-  file:
+- name: Configure yamllint folder
+  ansible.builtin.file:
+    mode: 0755
     path: ~/.config/yamllint
     state: directory
 
-- name: configure yamllint
-  copy:
-    src: ansible/yamllint
+  tags:
+    - ansible
+
+- name: Configure yamllint
+  ansible.builtin.copy:
+    mode: 0644
+    src: files/ansible/yamllint
     dest: ~/.config/yamllint/config
+  tags:
+    - ansible

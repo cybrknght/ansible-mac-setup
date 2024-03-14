@@ -3,103 +3,112 @@
 - name: Installing apps through homebrew (casks)
   community.general.homebrew_cask:
     name:
-#      - 1password
+      # - 1password
       - amazon-chime
       - aws-vault
-#      - bitwarden #in app store
+      # - bitwarden #in app store
       - docker
-#      - fantastical
-      - firefox
-      - google-chrome
+      # - fantastical
+      # - firefox
+      # - google-chrome
       - google-drive
+      - insomnia
       - inspec
       - iterm2
-#      - kaleidoscope
-      - keybase
+      # - kaleidoscope
+      # - keybase
       - keepassxc
       - menumeters
       - microsoft-auto-update
-#      - microsoft-edge
-#      - microsoft-office
-      - microsoft-teams
+      # - microsoft-edge
+      # - microsoft-office
+      # - microsoft-teams
       - netnewswire
       - obsidian
       - postman
       - powershell
-#      - rancher
-#      - signal
-#      - slack
-#      - tower
-#      - transmission
-#      - transmit
+      # - rancher
+      # - signal
+      # - slack
+      # - tower
+      # - transmission
+      # - transmit
       - visual-studio-code
-#      - vlc
-#      - zoom
+      # - vlc
+      # - zoom
     state: present
     accept_external_apps: yes
+  tags:
+    - apps
+
 
 - name: Installing apps through homebrew
   community.general.homebrew:
     name:
-      - act
+      - act  # Run your GitHub Actions locally
       - ansible
       - ansible-lint
       - awscli
       - azure-cli
       - azure-functions-core-tools@4
-      - cloudflare/cloudflare/cloudflared
-#      - coreutils
+      # - cloudflare/cloudflare/cloudflared
+      # - coreutils
       - gh
       - gnu-tar
       - go
       - granted
       - graphviz
-#      - gpg
+      # - gpg
+      - hashicorp/tap/packer
+      - hashicorp/tap/terraform
       - hashicorp/tap/terraform-ls
       - helm
-      - inframap
+      - inframap  #  read tfstate to generate a graph
       - jq
       - kubernetes-cli
-#      - keybase
-      - mas
+      # - keybase
+      - mas  #  Mac App Store CLI
       - md5sha1sum
-      - mdbook
+      # - mdbook
       - nmap
-#      - nodejs
-      - packer
+      # - nodejs
       - pandoc
       - powerlevel10k
-#      - speedtest-cli
-      - superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt
-      - turbot/tap/steampipe
+      # - speedtest-cli
       - sslscan
-      - terraform
-#      - timeout
+      - superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt
+      - telnet
       - tree
+      - turbot/tap/steampipe
+      # - timeout
       - watch
       - wget
       - yq
       - zsh-autosuggestions
     state: present
+  tags:
+    - apps
 
 - name: Install apps from the App Store
   community.general.mas:
     id:
-      - 1352778147 # bitwarden
-#      - 1295203466 # Microsoft Remote Desktop
-#      - 823766827  # OneDrive
-      - 1230249825 # VMware Remote Console
-#      - 803453959  # Slack for Desktop
-#      - 865500966  # feedly. Read more, know more.
-      - 1452453066 # hidden bar (menu bar icon organizer)
-#      - 1176895641 # spark
-#      - 419330170  # moom
-#      - 1419729466 # fast vpn
-#      - 409907375  # Apple Remote Desktop
-      - 1274495053 # Microsoft To Do
-#      - 880001334 # Reeder
-#      - 1475387142 # Tailscale
-#      - 472226235  # LanScan
-#      - 409183694  # Keynote
-#      - 409201541  # Pages
-#      - 409203825  # Numbers
+      - 1352778147  #  bitwarden
+      # - 1295203466 #  Microsoft Remote Desktop
+      # - 823766827  #  OneDrive
+      - 1230249825  #  VMware Remote Console
+      # - 803453959  #  Slack for Desktop
+      # - 865500966  #  feedly. Read more, know more.
+      - 1452453066  #  hidden bar (menu bar icon organizer)
+      # - 1176895641 #  spark
+      # - 419330170  #  moom
+      # - 1419729466 #  fast vpn
+      # - 409907375  #  Apple Remote Desktop
+      - 1274495053  #  Microsoft To Do
+      # - 880001334 #  Reeder
+      # - 1475387142 #  Tailscale
+      # - 472226235  #  LanScan
+      # - 409183694  #  Keynote
+      # - 409201541  #  Pages
+      # - 409203825  #  Numbers
+  tags:
+    - apps

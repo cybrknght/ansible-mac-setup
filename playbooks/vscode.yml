@@ -1,18 +1,31 @@
 ---
-- name: install vscode settings file
-  copy:
+- name: Install vscode settings file
+  ansible.builtin.copy:
     src: vscode/settings.json
     dest: $HOME/Library/Application Support/Code/User/settings.json
+    mode: 0644
+  tags:
+    - vscode
+    - config
 
-- name: include vscode vars
-  include_vars: vars/vscode.yml
+- name: Include vscode vars
+  ansible.builtin.include_vars: vars/vscode.yml
+  tags:
+    - vscode
+    - config
 
-- name: install vscode extensions
-  include_tasks: vscode-extensions-inst.yml
+- name: Install vscode extensions
+  ansible.builtin.include_tasks: vscode-extensions-inst.yml
   loop: "{{ visual_studio_code_extensions }}"
   when: visual_studio_code_extensions|length > 0
+  tags:
+    - vscode
+    - config
 
-- name: uninstall vscode extensions
-  include_tasks: vscode-extensions-uninst.yml
+- name: Uninstall vscode extensions
+  ansible.builtin.include_tasks: vscode-extensions-uninst.yml
   loop: "{{ visual_studio_code_extensions_absent }}"
   when: visual_studio_code_extensions_absent|length > 0
+  tags:
+    - vscode
+    - config

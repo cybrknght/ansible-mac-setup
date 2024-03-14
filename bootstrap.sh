@@ -36,11 +36,11 @@ else
   pip3 install --upgrade pip
 fi
 
-if pip3 show ansible 1>/dev/null; then
-  echo "Ansible 2.9 installed, skipping"
+if brew ls --versions ansible > /dev/null; then
+  echo "Ansible installed, skipping"
 else
-  echo "Installing Ansible 2.9"
-  pip3 install 'ansible>2.9,<2.10'
+  echo "Installing Ansible"
+  brew install ansible
 fi
 
 # Pull latest community module (temporary homebrew cask fixes)

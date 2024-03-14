@@ -1,9 +1,10 @@
 ---
 visual_studio_code_extensions:
   - 4ops.packer #packer
+  - bierner.markdown-mermaid # use mermaid (diagram/flowchart) for markdown
   - bierner.markdown-preview-github-styles # use github markdown styling
 #  - brijeshb42.vscode-excalidraw # doesn't exist
-  - DavidAnson.vscode-markdownlint # markdown linter
+  - davidanson.vscode-markdownlint # markdown linter
 #  - GitHub.vscode-pull-request-github #Github Pull Request
 #  - golang.go
   - github.vscode-github-actions # Github Actions
@@ -22,13 +23,8 @@ visual_studio_code_extensions:
   - ms-azuretools.vscode-azureresourcegroups # Azure Resources
   - ms-azuretools.vscode-azurestaticwebapps # Azure Static Web Apps
   - ms-azuretools.vscode-azurestorage # Azure Storage
-  - ms-azuretools.vscode-azurevirtualmachine # Azure Virtual Machines
+  - ms-azuretools.vscode-azurevirtualmachines # Azure Virtual Machines
   - ms-kubernetes-tools.vscode-kubernetes-tools # K8s
-  - ms-python.python # python
-  - ms-python.vscode-pylance
-  - ms-toolsai.jupyter
-  - ms-toolsai.jupyter-keymap
-  - ms-toolsai.jupyter-renderers
   - ms-vscode.vscode-node-azure-pack # Azure Tools (see list above)
   - ms-vscode-remote.remote-containers # Remote Containers (Dev Containers)
   - ms-vscode.azure-account # Sign-in Mgmt for VS Code
@@ -46,4 +42,4 @@ visual_studio_code_extensions:
 #  - wholroyd.HCL # HCL Language support
 #  - wholroyd.jinja # Jinga support
 visual_studio_code_extensions_absent: []
-#  - 4ops.packer #packer
+#   - 4ops.packer #packer
