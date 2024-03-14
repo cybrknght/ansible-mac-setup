@@ -12,16 +12,16 @@
   tags:
     - ansible
 
-- name: Install ansible pip modules
-  pip:
-    name:
-      - argcomplete
-      - yamllint==1.25.0
-      - ansible-lint==4.3.5
-      - docker
-      - docker-compose
-      - molecule==3.0.8
-    executable: pip3
+# - name: Install ansible pip modules
+#   pip:
+#     name:
+#       - argcomplete
+#       - yamllint==1.25.0
+#       - ansible-lint==4.3.5
+#       - docker
+#       - docker-compose
+#       - molecule==3.0.8
+#     executable: pip3
 
 - name: Configure yamllint folder
   ansible.builtin.file:
