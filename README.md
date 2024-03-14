@@ -80,10 +80,21 @@ The application, obsidian is used for saving nodes in md format.  Each vault has
 
 ## JAMF Installed Apps
 
-A list of apps installed and controlled by JAMF:
+I am not sure how these work.  If I install them via brew does jamf take over?  A list of apps installed and controlled by JAMF:
 
+* 1password
+* Cisco Secure Client VPN -> ?
+* Docker
+* Firefox
 * Github Desktop
 * Google Chrome
+* Google Drive
+* iterm2
 * Microsoft Office
+* Microsoft OneDrive
 * Microsoft Remote Desktop
-* Slack
+* Microsoft Teams (new)
+* obsidian
+* postman
+* slack
+* Visual Studio Code
