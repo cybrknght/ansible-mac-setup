@@ -3,38 +3,39 @@
 - name: Installing apps through homebrew (casks)
   community.general.homebrew_cask:
     name:
-#      - 1password
+      # - 1password
       - amazon-chime
       - aws-vault
-#      - bitwarden #in app store
+      # - bitwarden #in app store
       - docker
-#      - fantastical
-      - firefox
-      - google-chrome
+      # - fantastical
+      # - firefox
+      # - google-chrome
       - google-drive
+      - insomnia
       - inspec
       - iterm2
-#      - kaleidoscope
-      - keybase
+      # - kaleidoscope
+      # - keybase
       - keepassxc
       - menumeters
       - microsoft-auto-update
-#      - microsoft-edge
-#      - microsoft-office
-      - microsoft-teams
+      # - microsoft-edge
+      # - microsoft-office
+      # - microsoft-teams
       - netnewswire
       - obsidian
       - postman
       - powershell
-#      - rancher
-#      - signal
-#      - slack
-#      - tower
-#      - transmission
-#      - transmit
+      # - rancher
+      # - signal
+      # - slack
+      # - tower
+      # - transmission
+      # - transmit
       - visual-studio-code
-#      - vlc
-#      - zoom
+      # - vlc
+      # - zoom
     state: present
     accept_external_apps: yes
   tags:
@@ -44,41 +45,42 @@
 - name: Installing apps through homebrew
   community.general.homebrew:
     name:
-      - act
+      - act  # Run your GitHub Actions locally
       - ansible
       - ansible-lint
       - awscli
       - azure-cli
       - azure-functions-core-tools@4
-      - cloudflare/cloudflare/cloudflared
-#      - coreutils
+      # - cloudflare/cloudflare/cloudflared
+      # - coreutils
       - gh
       - gnu-tar
       - go
       - granted
       - graphviz
-#      - gpg
+      # - gpg
+      - hashicorp/tap/packer
+      - hashicorp/tap/terraform
       - hashicorp/tap/terraform-ls
       - helm
-      - inframap
+      - inframap  #  read tfstate to generate a graph
       - jq
       - kubernetes-cli
-#      - keybase
-      - mas
+      # - keybase
+      - mas  #  Mac App Store CLI
       - md5sha1sum
-      - mdbook
+      # - mdbook
       - nmap
-#      - nodejs
-      - packer
+      # - nodejs
       - pandoc
       - powerlevel10k
-#      - speedtest-cli
-      - superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt
-      - turbot/tap/steampipe
+      # - speedtest-cli
       - sslscan
-      - terraform
-#      - timeout
+      - superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt
+      - telnet
       - tree
+      - turbot/tap/steampipe
+      # - timeout
       - watch
       - wget
       - yq
