@@ -30,8 +30,10 @@
     "AggieCloud",
     "CODEOWNER",
     "creds",
+    "DMARC",
     "FAMIS",
     "mockpipeline",
+    "tamu",
     "unmanaged"
   ],
   //    "go.toolsManagement.autoUpdate": true,
