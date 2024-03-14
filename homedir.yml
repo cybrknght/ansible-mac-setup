@@ -1,17 +1,22 @@
 ---
 - name: Configure new macos system
   hosts: localhost
-  gather_facts:
+  gather_facts: true
   tasks:
-    - include: playbooks/ansible.yml
+    - name: Configure ansible
+      ansible.builtin.include_tasks: playbooks/ansible.yml
       tags: ansible
-    - include: playbooks/apps.yml
+    - name: Install Apps
+      ansible.builtin.include_tasks: playbooks/apps.yml
       tags: apps
-    - include: playbooks/zsh.yml
+    - name: Install and configure zsh
+      ansible.builtin.include_tasks: playbooks/zsh.yml
       tags: ["zsh", "config"]
-    - include: playbooks/vscode.yml
+    - name: Configure vscode
+      ansible.builtin.include_tasks: playbooks/vscode.yml
       tags: ["vscode", "config"]
-    - include: playbooks/iterm2.yml
+    - name: Configure iterm2
+      ansible.builtin.include_tasks: playbooks/iterm2.yml
       tags: ["iterm2", "config"]
 ##    - include: playbooks/aws.yml
 ##      tags: ["aws", "config"]
