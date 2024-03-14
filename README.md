@@ -32,7 +32,7 @@ Repo for bootstrapping and maintaining a reasonably complete state of my preferr
 
 NOTE: Might need to configure github username and email
 
-## Variables:
+## Variables
 
 For vscode extensions only:
 
