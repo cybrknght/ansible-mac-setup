@@ -1,16 +1,14 @@
 ---
-- name: check if oh-my-zsh is installed
-  stat:
+- name: Check if oh-my-zsh is installed
+  ansible.builtin.stat:
     path: ~/.oh-my-zsh/oh-my-zsh.sh
   register: installed
   tags:
     - zsh
     - config
 
-- name: install oh-my-zsh
-#  block:
-#    - command: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  git:
+- name: Install oh-my-zsh  # noqa: latest
+  ansible.builtin.git:
     repo: "https://github.com/robbyrussell/oh-my-zsh.git"
     dest: "{{ ansible_env.HOME + '/.oh-my-zsh' }}"
     update: yes
@@ -19,18 +17,19 @@
     - zsh
     - config
 
-- name: install powerline10k
+- name: Install powerline10k
   community.general.homebrew:
     name: powerlevel10k
   tags:
     - zsh
     - config
 
-- name: install meslo fonts
+- name: Install meslo fonts
   become: true
-  get_url:
+  ansible.builtin.get_url:
     url: "https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/{{ item }}"
     dest: "/Library/Fonts/{{ item }}"
+    mode: 0644
   with_items:
     - MesloLGS%20NF%20Regular.ttf
     - MesloLGS%20NF%20Bold.ttf
@@ -40,8 +39,8 @@
     - zsh
     - config
 
-- name: create home dire .inc directory
-  file:
+- name: Create home dire .inc directory
+  ansible.builtin.file:
     path: ~/.inc
     state: directory
     mode: 0755
@@ -49,25 +48,27 @@
     - zsh
     - config
 
-- name: install google-cloud-sdk
-  unarchive:
-    src: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-335.0.0-darwin-x86_64.tar.gz
+- name: Install google-cloud-sdk
+  ansible.builtin.unarchive:
+    src: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-468.0.0-darwin-arm.tar.gz
     dest: ~/.inc
     remote_src: yes
   tags:
     - zsh
     - config
 
-- name: install zshrc file
-  copy:
+- name: Install zshrc file
+  ansible.builtin.copy:
+    mode: 0644
     src: zsh/zshrc
     dest: ~/.zshrc
   tags:
     - zsh
     - config
 
-- name: install powerline10k config file
-  copy:
+- name: Install powerline10k config file
+  ansible.builtin.copy:
+    mode: 0644
     src: zsh/p10k.zsh
     dest: ~/.p10k.zsh
   tags:

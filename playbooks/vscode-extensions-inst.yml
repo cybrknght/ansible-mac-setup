@@ -1,7 +1,8 @@
 ---
-- name: Check if extension is installed
-  shell: code --list-extensions | grep {{ item }}
+- name: Check if extension {{ item }} is installed
+  ansible.builtin.shell: code --list-extensions | grep {{ item }}
   register: vsextension_installed
+  changed_when: vsextension_installed.rc != 0
   when: visual_studio_code_extensions|length > 0
   ignore_errors: true
   tags:
@@ -9,7 +10,9 @@
     - config
 
 - name: Install missing extension {{ item }}
-  command: code --install-extension {{ item }}
+  ansible.builtin.command: code --install-extension {{ item }}
+  register: install_result
+  changed_when: install_result.rc == 0
   when:
     - visual_studio_code_extensions|length > 0
     - item != vsextension_installed.stdout
