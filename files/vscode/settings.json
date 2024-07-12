@@ -42,11 +42,12 @@
   "workbench.startupEditor": "none",
   "git.confirmSync": false,
   "git.autofetch": true,
-  "editor.tabSize": 2,
+  // "editor.tabSize": 2,
   "redhat.telemetry.enabled": false,
   "vs-kubernetes": {
     "vscode-kubernetes.minikube-path.mac": "/Users/brandon-tharp/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
-    "vscode-kubernetes.helm-path.mac": "/Users/brandon-tharp/.vs-kubernetes/tools/helm/darwin-arm64/helm"
+    "vscode-kubernetes.helm-path.mac": "/Users/brandon-tharp/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.minikube-path-mac": "/Users/brandon-tharp/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
   "window.commandCenter": true,
   "excalidraw.theme": "dark",
@@ -61,7 +62,9 @@
   "githubPullRequests.pullBranch": "never",
   "powershell.promptToUpdatePowerShell": false,
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "terraform.experimentalFeatures.validateOnSave": true,
   "githubPullRequests.fileListLayout": "tree",
@@ -69,5 +72,7 @@
   "ansible.lightspeed.enabled": false,
   "ansible.executionEnvironment.volumeMounts": [],
   "cloudcode.duetAI.enable": false,
-  "cloudcode.duetAI.inlineSuggestions.enableAuto": false
+  "cloudcode.duetAI.inlineSuggestions.enableAuto": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  // "editor.indentSize": "tabSize"
 }

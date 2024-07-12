@@ -3,6 +3,7 @@ visual_studio_code_extensions:
   - 4ops.packer #packer
   - bierner.markdown-mermaid # use mermaid (diagram/flowchart) for markdown
   - bierner.markdown-preview-github-styles # use github markdown styling
+  - charliermarsh.ruff # Python linter and code formatter
 #  - brijeshb42.vscode-excalidraw # doesn't exist
   - davidanson.vscode-markdownlint # markdown linter
 #  - GitHub.vscode-pull-request-github #Github Pull Request
