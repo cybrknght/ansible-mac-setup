@@ -15,21 +15,22 @@ visual_studio_code_extensions:
   # - hediet.vscode-drawio
   # - HookyQR.beautify
   # - keesschollaart.vscode-home-assistant
-  - ms-azuretools.vscode-docker  # Docker
+  - ms-azuretools.azure-dev  # Azure Dev CLI
   - ms-azuretools.vscode-azureappservice  # Azure App Service
   - ms-azuretools.vscode-azurecontainerapps  # Azure Container Apps
-  - ms-azuretools.vscode-cosmosdb  # Azure Apps CosmoDB
-  - ms-azuretools.azure-dev  # Azure Dev CLI
   - ms-azuretools.vscode-azurefunctions  # Azure Functions
   - ms-azuretools.vscode-azureresourcegroups  # Azure Resources
   - ms-azuretools.vscode-azurestaticwebapps  # Azure Static Web Apps
   - ms-azuretools.vscode-azurestorage  # Azure Storage
+  - ms-azuretools.vscode-azureterraform  # Azure Terraform
   - ms-azuretools.vscode-azurevirtualmachines  # Azure Virtual Machines
+  - ms-azuretools.vscode-cosmosdb  # Azure Apps CosmoDB
+  - ms-azuretools.vscode-docker  # Docker
   - ms-kubernetes-tools.vscode-kubernetes-tools  # K8s
-  - ms-vscode.vscode-node-azure-pack  # Azure Tools (see list above)
   - ms-vscode-remote.remote-containers  # Remote Containers (Dev Containers)
   - ms-vscode.azure-account  # Sign-in Mgmt for VS Code
   - ms-vscode.powershell  # Powershell
+  - ms-vscode.vscode-node-azure-pack  # Azure Tools (see list above)
   - pomdtr.excalidraw-editor  # Excalidraw
   - redhat.ansible  # ansible
   - redhat.vscode-yaml
