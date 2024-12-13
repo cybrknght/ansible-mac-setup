@@ -39,7 +39,7 @@
     - zsh
     - config
 
-- name: Create home dire .inc directory
+- name: Create home dir .inc directory
   ansible.builtin.file:
     path: ~/.inc
     state: directory
