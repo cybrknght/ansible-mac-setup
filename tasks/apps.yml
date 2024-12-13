@@ -49,6 +49,7 @@
       - ansible
       - ansible-lint
       - awscli
+      - aztfexport # tf exporter for azurerm provider
       - azure-cli
       - azure-functions-core-tools@4
       # - cloudflare/cloudflare/cloudflared
@@ -74,11 +75,14 @@
       # - nodejs
       - pandoc
       - powerlevel10k
+      - pre-commit
       # - speedtest-cli
       - sslscan
       - superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt
       - telnet
+      - tflint
       - tree
+      - trivy
       - turbot/tap/steampipe
       # - timeout
       - watch
