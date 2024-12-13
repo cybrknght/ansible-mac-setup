@@ -50,6 +50,8 @@ cd ~/playbook/ansible-mac-setup
 
 The script will install the pre-requisites to run ansible.  After the prerequisites in the script have been run you can run ansible with individual tags to update/run individual plays:
 
+* ansible
+* apps
 * zsh
 * vscode
 * iterm2
@@ -63,6 +65,19 @@ ansible-playbook homedir.yml --connection=local -K --tags <tag>
 ```
 
 Note: to fix a problem with iterm2 fonts, you need to include `--ask-become-pass` or `-K` for short
+
+### Cheat sheet
+
+Here are a few commands for ansible:
+
+```shell
+# Linting
+ansible-lint
+# Syntax Check
+ansible-playbook homedir.yml --syntax-check
+# Check for differences
+ansible-playbook homedir.yml --connection=local --ask-become-pass --tags ansible --check --diff
+```
 
 ## Settings
 
