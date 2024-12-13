@@ -3,7 +3,7 @@
   ansible.builtin.copy:
     src: vscode/settings.json
     dest: $HOME/Library/Application Support/Code/User/settings.json
-    mode: 0644
+    mode: "0644"
   tags:
     - vscode
     - config

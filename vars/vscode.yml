@@ -1,46 +1,47 @@
 ---
 visual_studio_code_extensions:
-  - 4ops.packer #packer
-  - bierner.markdown-mermaid # use mermaid (diagram/flowchart) for markdown
-  - bierner.markdown-preview-github-styles # use github markdown styling
-  - charliermarsh.ruff # Python linter and code formatter
-#  - brijeshb42.vscode-excalidraw # doesn't exist
-  - davidanson.vscode-markdownlint # markdown linter
-#  - GitHub.vscode-pull-request-github #Github Pull Request
-#  - golang.go
-  - github.vscode-github-actions # Github Actions
-  - googlecloudtools.cloudcode # Google Cloud's IDE extension
-  - hashicorp.hcl # syntax highlighting for HCL files
-  - hashicorp.terraform # Syntax highlighting and autocompletion for Terraform
-#  - hediet.vscode-drawio
-#  - HookyQR.beautify
-#  - keesschollaart.vscode-home-assistant
-  - ms-azuretools.vscode-docker # Docker
-  - ms-azuretools.vscode-azureappservice # Azure App Service
-  - ms-azuretools.vscode-azurecontainerapps # Azure Container Apps
-  - ms-azuretools.vscode-cosmosdb # Azure Apps CosmoDB
-  - ms-azuretools.azure-dev # Azure Dev CLI
-  - ms-azuretools.vscode-azurefunctions # Azure Functions
-  - ms-azuretools.vscode-azureresourcegroups # Azure Resources
-  - ms-azuretools.vscode-azurestaticwebapps # Azure Static Web Apps
-  - ms-azuretools.vscode-azurestorage # Azure Storage
-  - ms-azuretools.vscode-azurevirtualmachines # Azure Virtual Machines
-  - ms-kubernetes-tools.vscode-kubernetes-tools # K8s
-  - ms-vscode.vscode-node-azure-pack # Azure Tools (see list above)
-  - ms-vscode-remote.remote-containers # Remote Containers (Dev Containers)
-  - ms-vscode.azure-account # Sign-in Mgmt for VS Code
-  - ms-vscode.powershell # Powershell
-  - pomdtr.excalidraw-editor # Excalidraw
-  - redhat.ansible # ansible
+  - 4ops.packer  # packer
+  - bierner.markdown-mermaid  # use mermaid (diagram/flowchart) for markdown
+  - bierner.markdown-preview-github-styles  # use github markdown styling
+  - charliermarsh.ruff  # Python linter and code formatter
+  # - brijeshb42.vscode-excalidraw  # doesn't exist
+  - davidanson.vscode-markdownlint  # markdown linter
+  # - GitHub.vscode-pull-request-github  # Github Pull Request
+  # - golang.go
+  - github.vscode-github-actions  # Github Actions
+  - googlecloudtools.cloudcode  # Google Cloud's IDE extension
+  - hashicorp.hcl  # syntax highlighting for HCL files
+  - hashicorp.terraform  # Syntax highlighting and autocompletion for Terraform
+  # - hediet.vscode-drawio
+  # - HookyQR.beautify
+  # - keesschollaart.vscode-home-assistant
+  - ms-azuretools.azure-dev  # Azure Dev CLI
+  - ms-azuretools.vscode-azureappservice  # Azure App Service
+  - ms-azuretools.vscode-azurecontainerapps  # Azure Container Apps
+  - ms-azuretools.vscode-azurefunctions  # Azure Functions
+  - ms-azuretools.vscode-azureresourcegroups  # Azure Resources
+  - ms-azuretools.vscode-azurestaticwebapps  # Azure Static Web Apps
+  - ms-azuretools.vscode-azurestorage  # Azure Storage
+  - ms-azuretools.vscode-azureterraform  # Azure Terraform
+  - ms-azuretools.vscode-azurevirtualmachines  # Azure Virtual Machines
+  - ms-azuretools.vscode-cosmosdb  # Azure Apps CosmoDB
+  - ms-azuretools.vscode-docker  # Docker
+  - ms-kubernetes-tools.vscode-kubernetes-tools  # K8s
+  - ms-vscode-remote.remote-containers  # Remote Containers (Dev Containers)
+  - ms-vscode.azure-account  # Sign-in Mgmt for VS Code
+  - ms-vscode.powershell  # Powershell
+  - ms-vscode.vscode-node-azure-pack  # Azure Tools (see list above)
+  - pomdtr.excalidraw-editor  # Excalidraw
+  - redhat.ansible  # ansible
   - redhat.vscode-yaml
   - ronnidc.nunjucks
-  - samuelcolvin.jinjahtml #better jinja
-  - shardulm94.trailing-spaces # trailing spaces
-  - streetsidesoftware.code-spell-checker # Spell checker for code
-  - yzhang.markdown-all-in-one #markdown ToC
-#  - uctakeoff.vscode-counter
-#  - vmware-pscoe.vrealize-developer-tools
-#  - wholroyd.HCL # HCL Language support
-#  - wholroyd.jinja # Jinga support
+  - samuelcolvin.jinjahtml  # better jinja
+  - shardulm94.trailing-spaces  # trailing spaces
+  - streetsidesoftware.code-spell-checker  # Spell checker for code
+  - yzhang.markdown-all-in-one  # markdown ToC
+# - uctakeoff.vscode-counter
+# - vmware-pscoe.vrealize-developer-tools
+# - wholroyd.HCL # HCL Language support
+# - wholroyd.jinja # Jinga support
 visual_studio_code_extensions_absent: []
-#   - 4ops.packer #packer
+# - 4ops.packer #packer

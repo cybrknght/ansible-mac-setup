@@ -68,11 +68,13 @@
   },
   "terraform.experimentalFeatures.validateOnSave": true,
   "githubPullRequests.fileListLayout": "tree",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "ansible.lightspeed.enabled": false,
   "ansible.executionEnvironment.volumeMounts": [],
   "cloudcode.duetAI.enable": false,
   "cloudcode.duetAI.inlineSuggestions.enableAuto": false,
   "security.workspace.trust.untrustedFiles": "open",
+  "cloudcode.enableTelemetry": false,
+  "cloudcode.updateAdcOnLogin": false,
   // "editor.indentSize": "tabSize"
 }

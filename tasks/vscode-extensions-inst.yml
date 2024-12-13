@@ -1,5 +1,5 @@
 ---
-- name: Check if extension {{ item }} is installed
+- name: Check if extension is installed {{ item }}
   ansible.builtin.shell: code --list-extensions | grep {{ item }}
   register: vsextension_installed
   changed_when: vsextension_installed.rc != 0
