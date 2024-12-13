@@ -4,17 +4,17 @@
   gather_facts: true
   tasks:
     - name: Configure ansible
-      ansible.builtin.include_tasks: playbooks/ansible.yml
+      ansible.builtin.include_tasks: tasks/ansible.yml
       tags: ansible
     - name: Install Apps
-      ansible.builtin.include_tasks: playbooks/apps.yml
+      ansible.builtin.include_tasks: tasks/apps.yml
       tags: apps
     - name: Install and configure zsh
-      ansible.builtin.include_tasks: playbooks/zsh.yml
+      ansible.builtin.include_tasks: tasks/zsh.yml
       tags: ["zsh", "config"]
     - name: Configure vscode
-      ansible.builtin.include_tasks: playbooks/vscode.yml
+      ansible.builtin.include_tasks: tasks/vscode.yml
       tags: ["vscode", "config"]
     - name: Configure iterm2
-      ansible.builtin.include_tasks: playbooks/iterm2.yml
+      ansible.builtin.include_tasks: tasks/iterm2.yml
       tags: ["iterm2", "config"]
