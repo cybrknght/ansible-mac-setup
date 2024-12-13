@@ -28,7 +28,6 @@
     mode: "0755"
     path: ~/.config/yamllint
     state: directory
-
   tags:
     - ansible
 
