@@ -71,10 +71,39 @@
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "ansible.lightspeed.enabled": false,
   "ansible.executionEnvironment.volumeMounts": [],
-  "cloudcode.duetAI.enable": false,
-  "cloudcode.duetAI.inlineSuggestions.enableAuto": false,
   "security.workspace.trust.untrustedFiles": "open",
   "cloudcode.enableTelemetry": false,
   "cloudcode.updateAdcOnLogin": false,
+  "geminicodeassist.enable": false,
+  "geminicodeassist.inlineSuggestions.enableAuto": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "@azure.argTenant": "",
+  "remote.defaultExtensionsIfInstalledLocally": [
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "GitHub.vscode-pull-request-github"
+  ],
+  "vscode-kubernetes.kubectl-path-mac": "/opt/homebrew/bin/kubectl",
+  "docker.extension.enableComposeLanguageServer": false,
+  "azureTerraform.survey": {
+    "surveyPromptDate": "never",
+    "surveyPromptIgnoredCount": 0
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   // "editor.indentSize": "tabSize"
 }

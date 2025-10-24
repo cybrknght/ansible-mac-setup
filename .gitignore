@@ -1,1 +1,33 @@
+# Sensitive information
+*.vault
+*.key
+*.pem
+inventory/host_vars/*.vault
+inventory/group_vars/*.vault
+inventory/secrets.yml # Or whatever your secrets file is named
+
+# Temporary files and caches
+.ansible/
+*.retry
+*.log
+*.swp
+*.bak
+*~
+.#*
+# Editor/IDE specific files
+.idea/
 .vscode/
+
+# Python related files (if using Python for custom modules or plugins)
+__pycache__/
+*.pyc
+.venv/
+
+# Build artifacts or generated files
+tmp/
+build/
+dist/
+
+# Operating system specific files
+.DS_Store
+Thumbs.db
