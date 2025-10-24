@@ -1,11 +1,13 @@
 ---
 visual_studio_code_extensions:
+  # View installed extensions `code --list-extensions`
   - 4ops.packer  # packer
   - bierner.markdown-mermaid  # use mermaid (diagram/flowchart) for markdown
   - bierner.markdown-preview-github-styles  # use github markdown styling
   - charliermarsh.ruff  # Python linter and code formatter
   # - brijeshb42.vscode-excalidraw  # doesn't exist
   - davidanson.vscode-markdownlint  # markdown linter
+  - docker.docker # official docker extension
   # - GitHub.vscode-pull-request-github  # Github Pull Request
   # - golang.go
   - github.vscode-github-actions  # Github Actions
@@ -25,12 +27,15 @@ visual_studio_code_extensions:
   - ms-azuretools.vscode-azureterraform  # Azure Terraform
   - ms-azuretools.vscode-azurevirtualmachines  # Azure Virtual Machines
   - ms-azuretools.vscode-cosmosdb  # Azure Apps CosmoDB
-  - ms-azuretools.vscode-docker  # Docker
+  # - ms-azuretools.vscode-docker  # Docker
   - ms-kubernetes-tools.vscode-kubernetes-tools  # K8s
   - ms-vscode-remote.remote-containers  # Remote Containers (Dev Containers)
-  - ms-vscode.azure-account  # Sign-in Mgmt for VS Code
+  # - ms-vscode.azure-account  # Sign-in Mgmt for VS Code
   - ms-vscode.powershell  # Powershell
+  - ms-vscode.remote-explorer # Remote Explorer
+  - ms-vscode.remote-server # Remote Tunnels
   - ms-vscode.vscode-node-azure-pack  # Azure Tools (see list above)
+  - ms-windows-ai-studio.windows-ai-studio # AI toolkit for VS Code
   - pomdtr.excalidraw-editor  # Excalidraw
   - redhat.ansible  # ansible
   - redhat.vscode-yaml
